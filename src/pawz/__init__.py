@@ -1,5 +1,8 @@
 # imports
-import pawz_core as nc
+import pawz_core as pc
+
+# open pawz
+pc.open_pawz()
 
 # exports
-__all__ = ["nc"]
+__all__ = ["pc"]
