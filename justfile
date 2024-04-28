@@ -35,13 +35,13 @@ install:
 uninstall:
     @pip uninstall pawz pawz-core -y
 
-# publish-test
+# release-test
 release-test:
     just build
     @twine upload --repository testpypi src/pawz-core/dist/* -u __token__ -p ${PYPI_TEST_TOKEN}
     @twine upload --repository testpypi dist/* -u __token__ -p ${PYPI_TEST_TOKEN}
 
-# publish
+# release
 release:
     just build
     @twine upload src/pawz-core/dist/* -u __token__ -p ${PYPI_TOKEN}

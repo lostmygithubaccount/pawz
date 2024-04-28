@@ -4,8 +4,9 @@ build-backend = "maturin"
 
 [project]
 name = "pawz_core"
+dynamic = ["version"]
 authors = [{ name = "Cody", email = "cody@dkdc.dev" }]
-description = "pawz the dog (core)"
+description = "pawz core functionality (Rust!)"
 readme = "readme.md"
 requires-python = ">=3.11"
 classifiers = [
@@ -14,7 +15,6 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 dependencies = []
-dynamic = ["version"]
 
 [tool.maturin]
 features = ["pyo3/extension-module"]
